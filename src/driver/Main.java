@@ -13,6 +13,5 @@ public class Main {
         Value x1w1x2w2 = x1w1.add(x2w2);
         Value n = x1w1x2w2.add(b);
         Value o = n.tanh();
-        o.backward();
     }
 }

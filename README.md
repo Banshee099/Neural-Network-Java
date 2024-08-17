@@ -11,7 +11,7 @@ This project is still in the early stages of development. Features may be incomp
 
 - Feedforward Neural Network: Basic implementation of a fully connected feedforward neural network.
 - Backpropagation Algorithm: Initial implementation of the backpropagation algorithm for training the network.
-- Activation Functions: Includes simple activation functions like Sigmoid and ReLU.
+- Activation Functions: Includes simple activation functions like tanh.
 
 Since the project is under development, it is not yet packaged for installation. To use the code, you will need to clone the repository and manually compile and run the code.
 

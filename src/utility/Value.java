@@ -20,7 +20,6 @@ public class Value {
     }
 
 
-
     // Equivalent to Python's __add__
     public Value add(Value other) {
         Value out = new Value(this.data + other.data, Set.of(this, other));
