@@ -39,7 +39,7 @@ public class Main {
 }
 ```
 
-Here's how you can define a small dataset and train it on a MLP with backpropagation:
+Here's how you can define a small dataset and train it on a MLP of 1 input layer of 3 neurons, 2 hidden layer of 4 neuron each and 1 output layer with a single neuron with backpropagation:
 
 ```java
 package driver;
