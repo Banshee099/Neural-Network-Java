@@ -16,7 +16,7 @@ This project is still in the early stages of development. Features may be incomp
 Since the project is under development, it is not yet packaged for installation. To use the code, you will need to clone the repository and manually compile and run the code.
 
 ## Example
-Here's a simple example of how to define and use the neural network:
+Here's a simple example of how to use the operations used in Defining a Neural Network:
 
 ```java
 
