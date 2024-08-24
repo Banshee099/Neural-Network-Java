@@ -27,7 +27,7 @@ public class Main {
                 for (Double xi : x) {
                     xValues.add(new Value(xi));
                 }
-                ypred.add(n.call(xValues).get(0)); // Assuming MLP output is a single Value
+                ypred.add(n.call(xValues).get(0));
             }
 
             Value loss = new Value(0.0);

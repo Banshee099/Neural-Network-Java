@@ -11,9 +11,9 @@ public class Neuron {
         Random random = new Random();
         w = new ArrayList<>();
         for (int i = 0; i < nim; i++) {
-            w.add(new Value(random.nextDouble() * 2 - 1)); // Random value between -1 and 1
+            w.add(new Value(random.nextDouble() * 2 - 1));
         }
-        b = new Value(random.nextDouble() * 2 - 1); // Random value between -1 and 1
+        b = new Value(random.nextDouble() * 2 - 1);
     }
 
     public Value call(List<Value> x) {
