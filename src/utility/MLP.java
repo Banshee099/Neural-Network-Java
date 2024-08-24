@@ -1,19 +1,18 @@
 package utility;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MLP {
+    private List<Layer> layers;
 
-    public List<Layer> layers;
-
-    public MLP(double nin, List<Double> nouts){
-        List<Double> sz = new ArrayList<>();
-        sz.add(nin);
+    public MLP(int nim, List<Integer> nouts) {
+        List<Integer> sz = new ArrayList<>();
+        sz.add(nim);
         sz.addAll(nouts);
-        layers=new ArrayList<>();
-        for(int i=0;i<nouts.size();i++){
-            layers.add(new Layer(sz.get(i),sz.get(i+1)));
+
+        layers = new ArrayList<>();
+        for (int i = 0; i < nouts.size(); i++) {
+            layers.add(new Layer(sz.get(i), sz.get(i + 1)));
         }
     }
 
@@ -23,6 +22,7 @@ public class MLP {
         }
         return x;
     }
+
     public List<Value> parameters() {
         List<Value> params = new ArrayList<>();
         for (Layer layer : layers) {
