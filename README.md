@@ -20,11 +20,6 @@ Here's a simple example of how to use the operations used in Defining a Neural N
 
 ```java
 
-package driver;
-import utility.Value;
-
-public class Main {
-    public static void main(String[] args) {
         Value x1 = new Value(2.0);
         Value x2 = new Value(0.0);
         Value w1 =new Value(-3.0);
@@ -35,22 +30,11 @@ public class Main {
         Value x1w1x2w2 = x1w1.add(x2w2);
         Value n = x1w1x2w2.add(b);
         Value o = n.tanh();
-    }
-}
 ```
 
 Here's how you can define a small dataset and train it on a MLP of 1 input layer of 3 neurons, 2 hidden layer of 4 neuron each and 1 output layer with a single neuron with backpropagation:
 
 ```java
-package driver;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import utility.MLP;
-import utility.Value;
-
-public class Main {
-    public static void main(String[] args) {
         MLP n = new MLP(3, Arrays.asList(4, 4, 1));
 
         List<List<Double>> xs = Arrays.asList(
@@ -94,8 +78,7 @@ public class Main {
 
             System.out.println(k + " = " + loss.getData());
         }
-    }
-}
+
 
 ```
 
