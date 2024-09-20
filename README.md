@@ -94,4 +94,3 @@ Contributions are welcome, but please note that the project is in an early devel
 For any questions, suggestions, or feedback, please contact:
 
 - Email: manasbisht2507@gmail.com
-- GitHub: Banshee099
